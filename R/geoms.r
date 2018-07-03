@@ -4,18 +4,20 @@
 #' @param x quoted name of \code{data} column to use for x-axis values
 #' @param y quoted name of \code{data} column to use for y-axis values
 #' @param color quoted name of \code{data} column to map color aesthetic to
-#' @param size quoted name of \code{data} column to make size aesthetic to
+#' @param size quoted name of \code{data} column to map size aesthetic to
+#' @param label quoted name of \code{data} column to map label aesthetic to
 #' @references \url{http://api.taucharts.com/basic/scatterplot.html}
 #' @export
 #' @examples
 #' tauchart(mtcars) %>% tau_point("mpg", "wt")
 #' mtcars$cyl <- factor(mtcars$cyl)
 #' tauchart(mtcars) %>% tau_point("mpg", "wt", "cyl", "hp")
-tau_point <- function(tau, x, y, color=NULL, size=NULL) {
+tau_point <- function(tau, x, y, color=NULL, size=NULL, label=NULL) {
   tau$x$x <- x
   tau$x$y <- y
   tau$x$color <- color
   tau$x$size <- size
+  tau$x$label <- label
   tau$x$type <- "scatterplot"
   tau
 }

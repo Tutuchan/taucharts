@@ -71,6 +71,7 @@ tauchart <- function(data, width = NULL, height = NULL, inputId = NULL) {
     dimensions=dimensions,
     x=NULL,
     y=NULL,
+    label=NULL,
     padding=NULL,
     guide=list(x=NULL, y=NULL, padding=NULL, color=NULL),
     input=inputId,

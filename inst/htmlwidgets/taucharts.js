@@ -118,6 +118,7 @@ HTMLWidgets.widget({
           guide: x.guide,
           x: x.x,
           y: x.y,
+          label: x.label,
           color: x.color,
           dimensions: x.dimensions,
           plugins: plugins
