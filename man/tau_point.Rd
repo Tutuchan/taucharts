@@ -4,7 +4,7 @@
 \alias{tau_point}
 \title{Create a TauCharts scatterplot}
 \usage{
-tau_point(tau, x, y, color = NULL, size = NULL)
+tau_point(tau, x, y, color = NULL, size = NULL, label = NULL)
 }
 \arguments{
 \item{tau}{taucharts object}
@@ -15,7 +15,9 @@ tau_point(tau, x, y, color = NULL, size = NULL)
 
 \item{color}{quoted name of \code{data} column to map color aesthetic to}
 
-\item{size}{quoted name of \code{data} column to make size aesthetic to}
+\item{size}{quoted name of \code{data} column to map size aesthetic to}
+
+\item{label}{quoted name of \code{data} column to map label aesthetic to}
 }
 \description{
 Create a TauCharts scatterplot

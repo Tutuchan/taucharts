@@ -4,7 +4,8 @@
 \alias{tauchart}
 \title{Create a new TauChart}
 \usage{
-tauchart(data, width = NULL, height = NULL, inputId = NULL)
+tauchart(data, width = NULL, height = NULL, inputId = NULL,
+  settings = NULL)
 }
 \arguments{
 \item{data}{\code{data.frame}-like or \code{xts} object}
@@ -14,6 +15,8 @@ tauchart(data, width = NULL, height = NULL, inputId = NULL)
 string and have \code{'px'} appended.}
 
 \item{inputId}{the input slot used to access the clicked point (for Shiny).}
+
+\item{settings}{an optional list of global chart settings}
 }
 \description{
 Performs basic widget setup and returns an object suitable for
